@@ -1,0 +1,44 @@
+<!-- appointments.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Appointments</title>
+</head>
+<body>
+  <header>
+    <h1>Appointments</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="appointment-form">
+    <h2>Book an Appointment</h2>
+    <form id="appointmentForm">
+      <input type="text" id="patientName" placeholder="Patient Name" required>
+      <input type="text" id="doctorName" placeholder="Doctor Name" required>
+      <input type="date" id="appointmentDate" required>
+      <button type="submit" class="btn-primary">Book Appointment</button>
+    </form>
+  </section>
+
+  <section class="appointments-list">
+    <h2>Your Appointments</h2>
+    <ul id="appointmentsContainer"></ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Healthcare System. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
